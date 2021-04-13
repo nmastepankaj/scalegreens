@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/"> -->
+
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/darktheme.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/neomorphic.css">
+  </head>
+  <body>
+    <script src="js/theme.js"></script>  
+<header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ScaleGreens</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">Privay Policy</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                <li><a class="dropdown-item" href="#">Category 1</a></li>
+                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                <li><a class="dropdown-item" href="#">Category 3</a></li>
+              </ul>
+              </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="images/slider-1.jpg" alt="slider image 1">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="images/slider-2.jpg" alt="slider image 2">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="images/slider-2.jpg" alt="slider image 2">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- show products grid -->
+  <div class="spacer"></div>
+  <div class="container product_show_grid overflow-hidden sg_text_400">
+    <div class="row mb-4 display-4 justify-content-center">OUR PRODUCTS</div>
+     <div class="row gx-3 mb-4">
+         <div class="col-md-4 m-md-0 m-2">
+             <div class="product_show shadow-sm">
+              <div class="d-flex justify-content-center">
+                  <img class="product_show_img" src="images/plant-1.png" alt="">
+              </div>
+              <div class="d-flex justify-content-around">
+                  <p>Plant</p>
+                  <p>Rs 220</p>
+              </div>
+              <div class="pb-4 d-flex justify-content-center">
+                  <a class="btn btn-success" href="#">Buy Now</a>
+              </div>
+          </div>
+         </div>
+         <div class="col-md-4 m-md-0 m-2">
+             <div class="product_show shadow-sm">
+              <div class="d-flex justify-content-center">
+                  <img class="product_show_img" src="images/plant-2.png" alt="">
+              </div>
+              <div class="d-flex justify-content-around">
+                  <p>Plant</p>
+                  <p>Rs 220</p>
+              </div>
+              <div class="pb-4 d-flex justify-content-center">
+                  <a class="btn btn-success" href="#">Buy Now</a>
+              </div>
+          </div>
+         </div>
+         <div class="col-md-4 m-md-0 m-2">
+             <div class="product_show shadow-sm">
+          <div class="d-flex justify-content-center">
+              <img class="product_show_img" src="images/plant-3.png" alt="">
+          </div>
+          <div class="d-flex justify-content-around">
+              <p>Plant</p>
+              <p>Rs 220</p>
+          </div>
+          <div class="pb-4 d-flex justify-content-center">
+              <a class="btn btn-success" href="#">Buy Now</a>
+          </div>
+      </div>
+     </div>
+
+     </div>
+     <div class="row gx-3 mb-4">
+      <div class="col-md-4 m-md-0 m-2">
+          <div class="product_show shadow-sm">
+           <div class="d-flex justify-content-center">
+               <img class="product_show_img" src="images/plant-1.png" alt="">
+           </div>
+           <div class="d-flex justify-content-around">
+               <p>Plant</p>
+               <p>Rs 220</p>
+           </div>
+           <div class="pb-4 d-flex justify-content-center">
+               <a class="btn btn-success" href="#">Buy Now</a>
+           </div>
+       </div>
+      </div>
+      <div class="col-md-4 m-md-0 m-2">
+          <div class="product_show shadow-sm">
+           <div class="d-flex justify-content-center">
+               <img class="product_show_img" src="images/plant-2.png" alt="">
+           </div>
+           <div class="d-flex justify-content-around">
+               <p>Plant</p>
+               <p>Rs 220</p>
+           </div>
+           <div class="pb-4 d-flex justify-content-center">
+               <a class="btn btn-success" href="#">Buy Now</a>
+           </div>
+       </div>
+      </div>
+      <div class="col-md-4 m-md-0 m-2">
+          <div class="product_show shadow-sm">
+       <div class="d-flex justify-content-center">
+           <img class="product_show_img" src="images/plant-3.png" alt="">
+       </div>
+       <div class="d-flex justify-content-around">
+           <p>Plant</p>
+           <p>Rs 220</p>
+       </div>
+       <div class="pb-4 d-flex justify-content-center">
+           <a class="btn btn-success" href="#">Buy Now</a>
+       </div>
+   </div>
+  </div>
+
+  </div>
+  </div>
+  <div class="spacer"></div>
+  <!-- show products grid end -->
+  <!-- Display Large products -->
+  <div class="container-fluid display_large_product sg_bg_100">
+    <div class="row">
+        <div class="p-4 col-md-4 display-4 sg_text_400">
+            <p>Best Product</p>
+            <p class="display-3 sg_text_600">Discount Upto 30%</p>
+            <a class="btn-lg btn-success" href="#">Buy Now</a>
+        </div>
+        <div class="p-md-4 p-1 col-md-8">
+            <div class="d-flex justify-content-md-end justify-content-center">
+                <img class="img_display_large" src="images/plant-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer"></div>
+  <!-- Display Large products end -->
+  <!-- Display Services -->
+  <div class="container show_services sg_text_600">
+    <div class="row">
+        <div class="mb-3 col-md-6">
+            <div class="p-3 d-flex bg_service_img" style="background: url('images/slider-2.jpg');">
+                <div class="display-4">
+                    <p>Service 1</p>
+                    <a class="btn-lg btn-success" href="#">Explore</a>
+                </div>
+                <div style="background: url('image/slider-2.jpg');"></div>
+            </div>
+        </div>
+        <div class="mb-3 col-md-6">
+            <div class="p-3 d-flex bg_service_img" style="background: url('images/slider-3.jpg');">
+                <div class="display-4">
+                    <p>Service 1</p>
+                    <a class="btn-lg btn-success" href="#">Explore</a>
+                </div>
+                <div style="background: url('image/slider-2.jpg');"></div>
+            </div>
+        </div>
+        <div class="mb-3 col-md-6">
+            <div class="p-3 d-flex bg_service_img" style="background: url('images/slider-4.jpg');">
+                <div class="display-4">
+                    <p>Service 1</p>
+                    <a class="btn-lg btn-success" href="#">Explore</a>
+                </div>
+                <div style="background: url('image/slider-1.jpg');"></div>
+            </div>
+        </div>
+        <div class="mb-3 col-md-6">
+            <div class="p-3 d-flex bg_service_img" style="background: url('images/slider-2.jpg');">
+                <div class="display-4">
+                    <p>Service 1</p>
+                    <a class="btn-lg btn-success" href="#">Explore</a>
+                </div>
+                <div style="background: url('image/slider-2.jpg');"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer"></div>
+  <!-- Display Services end -->
+  <!-- Our service speed -->
+  <div class="container">
+    <div class="row gx-4">
+        <div class="col-sm-4 mb-2">
+            <div class="p-3 sg_bg_100 sg_hover_bg_400">
+                <div class="d-flex justify-content-center">
+                    <img class="icon_size" src="icons/noun_Shipping.svg" alt="">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Free Shipping</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Free Shipping Over Oder Rs 1000</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mb-2">
+            <div class="p-3 sg_bg_100 sg_hover_bg_400">
+                <div class="d-flex justify-content-center">
+                    <img class="icon_size" src="icons/headphone.svg" alt="">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Free Shipping</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Free Shipping Over Oder Rs 1000</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mb-2">
+            <div class="p-3 sg_bg_100 sg_hover_bg_400">
+                <div class="d-flex justify-content-center">
+                    <img class="icon_size" src="icons/noun_Sync.svg" alt="">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Free Shipping</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Free Shipping Over Oder Rs 1000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer"></div>
+  <!-- Our service speed end -->
+
+  <script src="js/darkswitch.js"></script>
+
+
+  <div class="testimonials-clean">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Testimonials </h2>
+            <p class="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+        </div>
+        <div class="row people">
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/nUNhspp.jpg">
+                    <h5 class="name">Ben Johnson</h5>
+                    <p class="title">CEO of Company Inc.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/o5uMfKo.jpg">
+                    <h5 class="name">Carl Kent</h5>
+                    <p class="title">Founder of Style Co.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/At1IG6H.png">
+                    <h5 class="name">Emily Clark</h5>
+                    <p class="title">Owner of Creative Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="spacer"></div>
+ <!-- /Parallax Example-->
+  
+<div class="parallax"></div>
+<div class="spacer"></div>
+
+<!-- / contact Us Form-->
+<div class="container-fluid">
+  <div class="row display-4 sg_text_400 justify-content-center mb-3">
+    Contact Us
+  </div>
+  <div class="row">
+       <div class="col-md-8">
+              <div class="contact-form">
+                  <form action="">
+                    <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="input-group outer-shadow hover-in-shadow">
+                                  <input type="text" placeholder="Name" name="conName" id="conName" class="input-control">
+                              </div>
+                              <div class="input-group outer-shadow hover-in-shadow">
+                                  <input type="text" placeholder="Email" name="conMail" id="conMail" class="input-control">
+                              </div>
+                              <div class="input-group outer-shadow hover-in-shadow">
+                                  <input type="text" placeholder="Subject" name="conSubject" id="conSubject" class="input-control">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="input-group outer-shadow hover-in-shadow">
+                                  <textarea class="input-control" placeholder="Message" id="conContant" name="conContant"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                      <div class="contact_row ps-4">
+                          <div class="submit-btn">
+                              <button type="button" id="saveContact" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                          </div>
+                      </div>
+                  </form>
+                
+              </div>
+         
+    <div class="message"></div>
+  </div>
+  <div class="col-md-4">
+    <p>You May contact us on this</p>
+    <p>You May contact us on this</p>
+    <p>You May contact us on this</p>
+  </div>
+  </div>
+</div>
+<!-- Contact Us form End -->
+<div class="spacer"></div>
+   <!-- Site footer -->
+   <footer class="site-footer bg-dark text-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">ScaleGreens.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+       <a href="#">ScaleGreens</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+</main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+      
+  </body>
+</html>
