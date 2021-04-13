@@ -1,2 +1,1 @@
-# scalegreens
-For ScaleGreens Project
+permalink: /index.html
